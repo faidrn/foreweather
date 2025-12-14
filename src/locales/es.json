@@ -32,6 +32,13 @@
     "error": "Error al cargar datos del clima",
     "noResults": "No se encontraron resultados"
   },
+  "errors": {
+    "title": "Algo salió mal",
+    "generic": "No se pudo obtener la información del clima.",
+    "network": "Error de conexión. Verifica tu internet.",
+    "location_not_found": "No encontramos esa ubicación.",
+    "retry_button": "Reintentar"
+  },
   "weatherConditions": {
     "clearSky": "Cielo despejado",
     "mainlyClear": "Mayormente despejado",

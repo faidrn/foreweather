@@ -10,6 +10,8 @@ const MainLayout = () => {
     const { theme } = useTheme(); // Obtener el tema actual
     const [settingsOpen, setSettingsOpen] = useState(false);
 
+    
+
     return (
         <div className="min-h-screen w-full transition-colors duration-500 flex justify-center" 
          style={{ 

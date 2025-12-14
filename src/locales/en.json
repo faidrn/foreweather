@@ -18,16 +18,27 @@
   "colorScheme": "Color Scheme",
   "darkMode": "Dark Mode",
   "lightMode": "Light Mode",
-  "monday": "Mon",
-  "tuesday": "Tue",
-  "wednesday": "Wed",
-  "thursday": "Thu",
-  "friday": "Fri",
-  "saturday": "Sat",
-  "sunday": "Sun",
-  "loading": "Loading...",
-  "error": "Error loading weather data",
-  "noResults": "No results found",
+  "days": {
+    "monday": "Mon",
+    "tuesday": "Tue",
+    "wednesday": "Wed",
+    "thursday": "Thu",
+    "friday": "Fri",
+    "saturday": "Sat",
+    "sunday": "Sun"
+  },
+  "status": {
+    "loading": "Loading...",
+    "error": "Error loading weather data",
+    "noResults": "No results found"
+  },
+  "errors": {
+    "title": "Something went wrong",
+    "generic": "Could not fetch weather data.",
+    "network": "Connection error. Check your internet.",
+    "location_not_found": "Location not found.",
+    "retry_button": "Retry"
+  },
   "weatherConditions": {
     "clearSky": "Clear Sky",
     "mainlyClear": "Mainly Clear",
