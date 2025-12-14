@@ -12,9 +12,7 @@ export function SearchBar({ onLocationSelect }) {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const searchRef = useRef(null); 
-
-  // 🔒 Previene error si el JSON aún no se ha cargado
-    //if (!translation.searchBar) return <p>Loading...</p>;
+  
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -54,9 +52,9 @@ export function SearchBar({ onLocationSelect }) {
   };
 
   return (
-    <div ref={searchRef} className="relative w-full max-w-2xl">
+    <div ref={searchRef} className="relative w-11/12 md:w-full max-w-2xl top-8">
       <div className="relative">
-        <Search className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-gray-400" />
+        <Search className="absolute left-4 top-1/2 -translate-y-1/2 size-5 text-white/40 z-10 pointer-events-none" />
         <input
           type="text"
           value={query}

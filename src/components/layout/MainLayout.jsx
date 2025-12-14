@@ -7,7 +7,7 @@ const MainLayout = () => {
     const { theme } = useTheme(); // Obtener el tema actual
 
     return (
-        <div className="min-h-screen w-full transition-colors duration-500" 
+        <div className="min-h-screen w-full transition-colors duration-500 flex justify-center" 
          style={{ 
            background: 'linear-gradient(135deg, var(--color-primary) 0%, var(--color-secondary) 50%, var(--color-accent) 100%)'
          }}>
