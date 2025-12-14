@@ -31,6 +31,7 @@ export function SearchBar({ onLocationSelect }) {
       if (query.length >= 2) {
         setIsLoading(true);
         const locations = await searchLocations(query);
+        //console.log('Resultados de la API:', locations); // <--- DEBUGEA AQUÍ
         setResults(locations);
         setIsLoading(false);
         setIsOpen(true);
@@ -97,7 +98,7 @@ export function SearchBar({ onLocationSelect }) {
 
       {isLoading && (
         <div className="absolute top-full mt-2 w-full bg-white/10 backdrop-blur-lg rounded-2xl border border-white/20 p-4 text-center text-white/60">
-          {translation.loading}
+          {translation.status.loading}
         </div>
       )}
     </div>
