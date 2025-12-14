@@ -3,7 +3,7 @@ import { AlertCircle, RefreshCcw } from 'lucide-react';
 import { motion } from "framer-motion";
 import { useTranslations } from "../../hooks/useTranslations";
 
-const ErrorState = ({ errorKey }) => {
+const ErrorState = () => {
     const translation = useTranslations();
 
   return (
@@ -14,7 +14,7 @@ const ErrorState = ({ errorKey }) => {
         exit={{ opacity: 0, scale: 0.9 }}
         className="bg-red-500/20 backdrop-blur-lg rounded-2xl p-6 border border-red-500/30 text-white"
     >
-        {translation.errorKey}
+        {translation.errors?.generic}
     </motion.div>
   );
 };

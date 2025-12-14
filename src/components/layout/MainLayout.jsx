@@ -46,7 +46,6 @@ const MainLayout = () => {
       setForecast(data.forecast);
     } catch (err) {
       setError('Failed to load weather data');
-      console.error(err);
     } finally {
       setIsLoading(false);
     }
@@ -69,7 +68,7 @@ const MainLayout = () => {
                 transition={{ duration: 0.6 }}
                 className="w-full flex justify-center"
               >
-              <SearchBar onLocationSelect={(location) => console.log('Ubicación seleccionada:', location)} />
+              <SearchBar onLocationSelect={handleLocationSelect} />
               </motion.div>
 
               {/* Loading State */}
@@ -80,7 +79,7 @@ const MainLayout = () => {
 
               {/* Error State */}
               {error && !isLoading && (
-                <ErrorState errorKey="errors.generic" />
+                <ErrorState />
               )}
 
               {/* Weather Display */}

@@ -80,7 +80,7 @@ export function SearchBar({ onLocationSelect }) {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.05 }}
-                onClick={() => handleSelectLocation(location)}
+                onClick={() => {handleSelectLocation(location)}}
                 className="w-full px-4 py-3 flex items-center gap-3 hover:bg-white/10 transition-colors text-left text-white border-b border-white/10 last:border-b-0"
               >
                 <MapPin className="size-4 text-white/60" />
